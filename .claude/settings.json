@@ -1,0 +1,22 @@
+{
+  "env": {
+    "ANTHROPIC_AUTH_TOKEN": "",
+    "ANTHROPIC_BASE_URL": "https://litellm.sbp.ai",
+    "ANTHROPIC_SMALL_FAST_MODEL": "azure/gpt-5-mini",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "azure/gpt-5-mini",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "aws/claude-4-6-sonnet",
+    "DISABLE_TELEMETRY": "1",
+    "DISABLE_ERROR_REPORTING": "1",
+    "DISABLE_BUG_COMMAND": "1",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+    "CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS": "1"
+  },
+  "permissions": {
+    "allow": [
+    ]
+  },
+  "model": "aws/claude-4-8-opus",
+  "enabledPlugins": {
+    "rust-analyzer-lsp@claude-plugins-official": true
+  }
+}
