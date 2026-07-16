@@ -24,6 +24,9 @@ export PATH=/opt/homebrew/bin:$HOME/Library/Python/3.12/bin:/usr/local/bin:/usr/
 # Bash-style time output.
 export TIMEFMT=$'\nreal\t%*E\nuser\t%*U\nsys\t%*S'
 
+# 1Password LLM credential location.
+export ONEPASSWORD_LLM_CREDENTIAL_LOCATION=litellm-key
+
 # Include alias file (if present) containing aliases for ssh, etc.
 if [ -f ~/.aliases ]
 then
