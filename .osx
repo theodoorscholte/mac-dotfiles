@@ -214,11 +214,12 @@ defaults write com.apple.dock wvous-bl-corner -int 4
 defaults write com.apple.dock wvous-bl-modifier -int 0
 
 ###############################################################################
-# Google Chrome                                                               #
+# Default browser                                                             #
 ###############################################################################
 
-# Set Chrome as the default browser
-open -a "Google Chrome" --args --make-default-browser
+# Set Safari as the default browser
+defaults write com.apple.LaunchServices LSHandlers -array-add '{LSHandlerRoleAll = "com.apple.safari"; LSHandlerURLScheme = "https";}'
+defaults write com.apple.LaunchServices LSHandlers -array-add '{LSHandlerRoleAll = "com.apple.safari"; LSHandlerURLScheme = "http";}'
 
 ###############################################################################
 # Safari & WebKit                                                             #
