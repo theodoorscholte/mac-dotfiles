@@ -36,6 +36,9 @@ fi
 # General UI/UX                                                               #
 ###############################################################################
 
+# Always show scrollbars
+defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
+
 # Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 
@@ -161,6 +164,12 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 # Use list view in all Finder windows by default
 # Four-letter codes for the other view modes: `icnv`, `Nlsv`, `clmv`, `Flwv`
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
+
+# Keep folders on top when sorting by name
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
+
+# Sort by name (alphabetically) in all Finder windows
+defaults write com.apple.finder FXPreferredGroupBy -string "Name"
 
 # Show the ~/Library folder
 chflags nohidden ~/Library
