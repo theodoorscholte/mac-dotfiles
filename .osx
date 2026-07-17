@@ -213,6 +213,13 @@ defaults write com.apple.dock wvous-bl-corner -int 4
 defaults write com.apple.dock wvous-bl-modifier -int 0
 
 ###############################################################################
+# Google Chrome                                                               #
+###############################################################################
+
+# Set Chrome as the default browser
+open -a "Google Chrome" --args --make-default-browser
+
+###############################################################################
 # Safari & WebKit                                                             #
 ###############################################################################
 
